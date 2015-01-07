@@ -1,8 +1,8 @@
 {
   "name": "scripts-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Walk directory recursive and load all the scripts from there. (Super helpful when you want to separate your big gulp file into standalone tasks and load each task very easily.)",
-  "main": "y",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jsifalda/scripts-loader"
