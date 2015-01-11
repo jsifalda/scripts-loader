@@ -11,7 +11,9 @@
     "gulp",
     "scripts",
     "loader",
-    "tasks"
+    "tasks",
+    "scripts loader",
+    "gulp tasks loader"
   ],
   "author": "Jiri Sifalda <sifalda.jiri@gmail.com> (http://jsifalda.name/)",
   "license": "MIT",
