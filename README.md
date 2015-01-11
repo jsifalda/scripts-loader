@@ -29,7 +29,7 @@ This example will demonstrate how to use **scripts-loader** with Gulp.js.
 require './gulp'
 ```
 
-### gulp/index.coffee (EXAMPLE OF SCRIPTS-LOADER SETTINGS)
+### gulp/index.coffee (SCRIPTS-LOADER SETTINGS)
 ```coffee
 scriptsLoader = require 'scripts-loader'
 
@@ -52,7 +52,7 @@ config = {
 module.exports = config
 ```
 
-### gulp/tasks/client/lib.coffee (EXAMPLE OF GULP TASK DECLERATION)
+### gulp/tasks/client/lib.coffee (GULP TASK DECLERATION)
 ```coffee
 gulp = require 'gulp'
 bowerFiles = require 'main-bower-files'
@@ -78,7 +78,7 @@ gulp.task 'defualt', ['server/lib', 'server/app', 'client/lib', 'client/app']
 
 
 # Motivation
-Yeah... Now we've got 2015 today. 
+Yeah... We've got 2015 today. 
 And I still can see gulpfile.js files which have more than 1k lines per file over the internet.
 And that makes me a little bit worried because we've got such great tools but we don't using them in a good way (fortunately we can see an exceptions and that is great of course). 
 
