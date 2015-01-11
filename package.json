@@ -21,6 +21,11 @@
     "url": "https://github.com/jsifalda/scripts-loader/issues"
   },
   "homepage": "https://github.com/jsifalda/scripts-loader",
+  
+  "dependencies" : {
+    "file": "^0.2.2"
+  },
+  
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "gulp": "^3.8.10",
