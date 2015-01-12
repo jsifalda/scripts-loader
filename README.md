@@ -87,3 +87,5 @@ Above I suggest how to separate huge gulpfile into standalone tasks and make bui
 **Plus you can use this library for quick load all of gulp files.**
 
 **Thanks for your pull requests and questions!!**
+
+**Created by [JSifalda](http://jsifalda.name)**
