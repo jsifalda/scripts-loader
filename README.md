@@ -19,6 +19,7 @@ This example will demonstrate how to use **scripts-loader** with Gulp.js.
 ----default.coffee
 ---index.coffee
 ---config.coffee
+---dictionaries.coffee
 --test
 --gulpfile.coffee
 ```
@@ -26,7 +27,7 @@ This example will demonstrate how to use **scripts-loader** with Gulp.js.
 
 ### gulpfile.coffee
 ```coffee
-require './gulp'
+require './gulp' # will load gulp/index.coffee
 ```
 
 ### gulp/index.coffee (SCRIPTS-LOADER SETTINGS)
@@ -36,17 +37,16 @@ scriptsLoader = require 'scripts-loader'
 config = require './config'
 
 scriptsLoader.load config.root + '/gulp/tasks', {
-    verbose : false
-    endings : 'js|coffee'
+    verbose : false # dump paths of loaded files into console
+    endings : 'js|coffee' # filter which scripts you want to load
 }
 ```
 
 ### gulp/config.coffee
 ```coffee
 config = {
-    env : null
-
-    root : __dirname + '/..'
+    env : null # can we setup easily by another gulp task
+    root : __dirname + '/..' # root path
 }
 
 module.exports = config
@@ -58,7 +58,7 @@ gulp = require 'gulp'
 bowerFiles = require 'main-bower-files'
 concat = require 'gulp-concat'
 
-dictionaries = require '../../dictionaries'
+dictionaries = require '../../dictionaries' # define all the needed paths in gulp taks env
 config = require '../../config'
 
 gulp.task 'client/lib', ->
@@ -73,7 +73,7 @@ gulp.task 'client/lib', ->
 ```coffee
 gulp = require 'gulp'
 
-gulp.task 'defualt', ['server/lib', 'server/app', 'client/lib', 'client/app']
+gulp.task 'default', ['server/lib', 'server/app', 'client/lib', 'client/app']
 ```
 
 
